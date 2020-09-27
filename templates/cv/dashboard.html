@@ -1,0 +1,23 @@
+{% extends 'cv/base.html' %} {% block content %} {% load static %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"></script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+></script>
+<script src="{% static 'js/divisio.js' %}"></script>
+<script src="{% static 'js/age.js' %}"></script>
+
+
+<div class="container">
+  <h4 style="text-align: center">Dashboard</h4>
+  <div class="row">
+    <div class="col-md-6">
+      <canvas id="myChart2" width="400" height="400"></canvas>
+    </div>
+    <div class="col-md-6">
+      <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+  </div>
+</div>
+{% endblock %}
